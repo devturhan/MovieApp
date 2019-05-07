@@ -1,0 +1,40 @@
+PODS:
+  - Alamofire (4.8.2)
+  - CodableAlamofire (1.1.1):
+    - Alamofire (~> 4.0)
+  - DisplaySwitcher (1.2)
+  - SDWebImage (5.0.2):
+    - SDWebImage/Core (= 5.0.2)
+  - SDWebImage/Core (5.0.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - CodableAlamofire (~> 1.1.0)
+  - DisplaySwitcher (from `https://github.com/Yalantis/DisplaySwitcher.git`, tag `1.2`)
+  - SDWebImage
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - CodableAlamofire
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  DisplaySwitcher:
+    :git: https://github.com/Yalantis/DisplaySwitcher.git
+    :tag: '1.2'
+
+CHECKOUT OPTIONS:
+  DisplaySwitcher:
+    :git: https://github.com/Yalantis/DisplaySwitcher.git
+    :tag: '1.2'
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  CodableAlamofire: b587c1198562824abb1f468aed34feb00d6cecd8
+  DisplaySwitcher: a9ee0b5c7821cd8d12e39783ada99399f6d927a0
+  SDWebImage: 6764b5fa0f73c203728052955dbefa2bf1f33282
+
+PODFILE CHECKSUM: 84ed828798b1082b951f24b75cf3bd8eb929fe41
+
+COCOAPODS: 1.5.3

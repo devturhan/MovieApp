@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieListCollectionViewCell" id="gTV-IL-0wX" customClass="MovieListCollectionViewCell" customModule="MovieApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="167" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="167" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zhF-qc-CMi">
+                        <rect key="frame" x="0.0" y="0.0" width="167" height="155"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6xm-Ae-VAp">
+                                <rect key="frame" x="0.0" y="0.0" width="167" height="155"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6yl-FA-6BQ">
+                                <rect key="frame" x="0.0" y="108" width="167" height="47"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krt-mU-pqF">
+                                        <rect key="frame" x="5" y="5" width="157" height="37"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.66502530809859151" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="krt-mU-pqF" firstAttribute="top" secondItem="6yl-FA-6BQ" secondAttribute="top" constant="5" id="LQ6-PH-YGg"/>
+                                    <constraint firstAttribute="trailing" secondItem="krt-mU-pqF" secondAttribute="trailing" constant="5" id="Tg9-QA-lcU"/>
+                                    <constraint firstAttribute="height" constant="47" id="WQb-Sr-xxW"/>
+                                    <constraint firstAttribute="bottom" secondItem="krt-mU-pqF" secondAttribute="bottom" constant="5" id="lJH-uy-I9L"/>
+                                    <constraint firstItem="krt-mU-pqF" firstAttribute="leading" secondItem="6yl-FA-6BQ" secondAttribute="leading" constant="5" id="meb-b4-Q1L"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bookmarkFilled" translatesAutoresizingMaskIntoConstraints="NO" id="hQi-PW-mqB">
+                                <rect key="frame" x="137" y="0.0" width="30" height="30"/>
+                                <color key="tintColor" red="0.9389924274" green="0.52335769870000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Es-4g-Kks"/>
+                                    <constraint firstAttribute="width" constant="30" id="a7a-OZ-iIu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="6yl-FA-6BQ" secondAttribute="bottom" id="2Q6-mw-7NL"/>
+                            <constraint firstItem="6xm-Ae-VAp" firstAttribute="leading" secondItem="zhF-qc-CMi" secondAttribute="leading" id="7yz-Ch-5lP"/>
+                            <constraint firstItem="hQi-PW-mqB" firstAttribute="top" secondItem="zhF-qc-CMi" secondAttribute="top" id="DFd-hb-1YH"/>
+                            <constraint firstItem="6xm-Ae-VAp" firstAttribute="top" secondItem="zhF-qc-CMi" secondAttribute="top" id="DQv-f1-pWk"/>
+                            <constraint firstAttribute="bottom" secondItem="6xm-Ae-VAp" secondAttribute="bottom" id="PxJ-oP-FrG"/>
+                            <constraint firstAttribute="trailing" secondItem="6xm-Ae-VAp" secondAttribute="trailing" id="Udw-4g-aKh"/>
+                            <constraint firstAttribute="trailing" secondItem="hQi-PW-mqB" secondAttribute="trailing" id="Wa0-5M-w22"/>
+                            <constraint firstAttribute="trailing" secondItem="6yl-FA-6BQ" secondAttribute="trailing" id="paV-r2-dqU"/>
+                            <constraint firstItem="6yl-FA-6BQ" firstAttribute="leading" secondItem="zhF-qc-CMi" secondAttribute="leading" id="uAj-Bj-MzI"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="zhF-qc-CMi" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" id="HCY-2V-CTL"/>
+                <constraint firstItem="zhF-qc-CMi" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="JJv-z9-WKW"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="zhF-qc-CMi" secondAttribute="trailing" id="aOn-Lk-IBR"/>
+                <constraint firstItem="zhF-qc-CMi" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" id="cj1-zu-ku5"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="167" height="155"/>
+            <connections>
+                <outlet property="bookmarkImageView" destination="hQi-PW-mqB" id="eN9-5U-MHD"/>
+                <outlet property="posterImageView" destination="6xm-Ae-VAp" id="lwm-ly-8sf"/>
+                <outlet property="titleLabel" destination="krt-mU-pqF" id="eUD-XA-TFJ"/>
+            </connections>
+            <point key="canvasLocation" x="146.40000000000001" y="74.212893553223395"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="bookmarkFilled" width="157.09091186523438" height="157.09091186523438"/>
+    </resources>
+</document>
