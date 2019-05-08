@@ -9,11 +9,11 @@ Sample Movie App
 
 ## Application Detail
 - As a Architecture MVVM preferred,
-- Implemented Data Providers along with Protocols to be able to Mock Services
-- Used SDWebImage to load images directly to UIImageView
-- Used Alamofire on service layer
+- Implemented Data Providers along with Protocols to be able to Mock Services (For Unit Testing)
+- Used SDWebImage to load images directly to UIImageView from Url
+- Used Alamofire for networking calls on service layer
 - Libraries encapsulated and isolated from main layers (flexible to change)
-- Each tableview&collection view datasource and delegate has own adapter
+- Each tableView&collectionView own adapter which conforms delegate and datasource
 - Configured to provide all data from service layer 
-- Used state pattern for layout change
-
+- Used state design pattern for layout change
+- Protocol Oriented
