@@ -1,5 +1,5 @@
 # MovieApp
-Sample Movie App
+Sample Movie App with Unit and Integration Tests
 
 ## Features
 - Bookmarking
