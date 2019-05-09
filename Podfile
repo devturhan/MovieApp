@@ -10,5 +10,10 @@ target 'MovieApp' do
   pod 'Alamofire'
   pod 'SDWebImage'
   pod 'CodableAlamofire', '~> 1.1.0'
-
+  
+  target 'MovieAppTests' do
+      inherit! :search_paths
+      # Pods for testing
+      pod 'SwiftyMocky'
+  end
 end

@@ -17,3 +17,7 @@ Sample Movie App
 - Configured to provide all data from service layer 
 - Used state design pattern for layout change
 - Protocol Oriented
+
+## Testing 
+- Implemented Unit and Integration Tests 
+- Used SwiftyMocky

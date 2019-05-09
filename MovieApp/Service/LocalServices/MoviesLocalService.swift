@@ -7,6 +7,8 @@
 //
 
 import Foundation
+
+//sourcery: AutoMockable
 protocol MoviesLocalServiceProcotol {
     func isBookmarked(movie: Movie) -> Bool
     func bookmarked(movie: Movie)

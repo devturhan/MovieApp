@@ -54,11 +54,7 @@ extension MovieListViewController: MovieListViewModelDelegate {
 
 extension MovieListViewController: MovieListCollectionViewAdapterDelegate {
     func didSelect(movie: Movie) {
-        let bundle = Bundle(for: MovieDetailViewController.self)
-        if let  vc = UIStoryboard.init(name: "Main", bundle: bundle).instantiateViewController(withIdentifier: "MovieDetailViewController") as? MovieDetailViewController {
-            vc.movie = movie
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        navigationController?.pushViewController(MovieDetailViewController.instatiate(movie: movie), animated: true)
     }
     
     func scrolledToBottom() {

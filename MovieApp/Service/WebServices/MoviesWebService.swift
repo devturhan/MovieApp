@@ -9,6 +9,7 @@
 import Foundation
 import Alamofire
 
+//sourcery: AutoMockable
 protocol MoviesWebServiceProtocol {
     func fetchPopularMovies(onPage page: Int,
                             onSuccess:@escaping ([Movie])->Void,

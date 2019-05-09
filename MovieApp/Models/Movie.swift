@@ -57,9 +57,7 @@ class Movie: Codable {
 
 extension Movie: Equatable {
     static func == (lhs: Movie, rhs: Movie) -> Bool {
-        if lhs.id != rhs.id { return false }
+        if lhs.id != rhs.id { return false }
         return true
     }
-    
-    
 }

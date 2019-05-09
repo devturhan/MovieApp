@@ -18,6 +18,11 @@ class MovieDetailViewController: BaseViewController {
     var viewModel: MovieDetailViewModel!
     var movieDetailTableViewAdapter: MovieDetailTableViewAdapter?
     
+    static func instatiate(movie: Movie) -> MovieDetailViewController {
+        let vc: MovieDetailViewController = Storyboard.main.instantiateViewController()
+        vc.movie = movie
+        return vc
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Movie Detail"

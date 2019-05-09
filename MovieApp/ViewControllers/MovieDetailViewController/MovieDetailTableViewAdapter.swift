@@ -33,6 +33,12 @@ class MovieDetailTableViewAdapter:NSObject {
         tableView?.register(UINib(nibName: "MovieDetailTableViewCell", bundle: bundle), forCellReuseIdentifier: "MovieDetailTableViewCell")
     }
     
+    override func isEqual(_ object: Any?) -> Bool {
+        guard let adapter = object as? MovieDetailTableViewAdapter else { return false }
+        if adapter.dataSource != dataSource { return false }
+        return true
+    }
+    
 }
 
 extension MovieDetailTableViewAdapter: UITableViewDelegate {

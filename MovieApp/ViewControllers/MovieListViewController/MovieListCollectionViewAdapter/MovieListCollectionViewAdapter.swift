@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 import DisplaySwitcher
-
+//sourcery: AutoMockable
 protocol MovieListCollectionViewAdapterDelegate:class {
     func scrolledToBottom()
     func didSelect(movie: Movie)
@@ -61,6 +61,13 @@ class MovieListCollectionViewAdapter: NSObject {
         }
         transitionManager.startInteractiveTransition()
     }
+    
+    override func isEqual(_ object: Any?) -> Bool {
+        guard let adapter = object as? MovieListCollectionViewAdapter else { return false }
+        if adapter.dataSource != self.dataSource { return false }
+        return true
+    }
+    
 }
 
 extension MovieListCollectionViewAdapter: UICollectionViewDataSource {
