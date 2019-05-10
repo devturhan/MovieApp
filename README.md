@@ -21,3 +21,6 @@ Sample Movie App with Unit and Integration Tests
 ## Testing 
 - Implemented Unit and Integration Tests 
 - Used SwiftyMocky
+
+## Execute 
+- Launch 'MovieApp.xcworkspace' and click to run
