@@ -1,5 +1,5 @@
 # MovieApp
-Sample Movie App with Unit and Integration Tests
+Sample Movie App with Unit and Integration Tests 
 
 ## Features
 - Bookmarking
@@ -24,3 +24,11 @@ Sample Movie App with Unit and Integration Tests
 
 ## Execute 
 - Launch 'MovieApp.xcworkspace' and click to run
+
+## Dependency Manager
+- CocoaPods
+
+## Build Settings
+- Swift 4.2
+- XCode 10.1
+
